@@ -1,6 +1,5 @@
 package app.polls.repository;
 
-
 import app.polls.model.Role;
 import app.polls.model.RoleName;
 import org.springframework.data.jpa.repository.JpaRepository;

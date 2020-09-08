@@ -1,4 +1,4 @@
-package app.polls.payload;
+package app.polls.payload.request;
 
 import javax.validation.constraints.NotBlank;
 

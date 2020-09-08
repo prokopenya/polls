@@ -1,4 +1,4 @@
-package app.polls.payload;
+package app.polls.payload.response;
 
 public class ApiResponse {
     private Boolean success;

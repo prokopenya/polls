@@ -1,4 +1,4 @@
-package app.polls.payload;
+package app.polls.payload.response;
 
 public class JwtAuthenticationResponse {
     private String accessToken;
