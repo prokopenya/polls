@@ -1,21 +1,18 @@
 const {
-    override,
-    fixBabelImports,
-    addLessLoader,
+  override,
+  fixBabelImports,
+  addLessLoader,
 } = require("customize-cra");
 
 
 module.exports = override(
-    fixBabelImports("babel-plugin-import", {
-        libraryName: 'antd',
-        libraryDirectory: 'es',
-        style: true
-    }),
-    addLessLoader({
-        javascriptEnabled: true,
-        ident: 'postcss',
-        sourceMap: true, // should skip in production
-        importLoaders: true,
-        localIdentName: '[name]__[local]___[hash:base64:5]'
-    })
+  fixBabelImports("import", {
+    libraryName: "antd", libraryDirectory: "es", style: true // change importing css to less
+  }),
+  addLessLoader({
+    lessOptions: {
+      javascriptEnabled: true,
+      modifyVars: { '@primary-color': '#1DA57A' },
+    },
+  })
 );
